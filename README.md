@@ -19,7 +19,7 @@ npm run api => permet de démarrer une API avec Json-server
 #### Les fonctionnalités supplémentaires
 
 - Adopter une architecture en module : [x]
-- Authentification utilisateur : []
+- Authentification utilisateur : [/]
 - Gérer l'adminitration et le rôle utilisateur : []
 - Générer une documentation du projet : [x]
 
