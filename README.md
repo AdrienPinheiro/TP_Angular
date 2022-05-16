@@ -34,3 +34,5 @@ Le TP a été réalisé en 1 jour, il est loin d'être fini mais je le continuer
 
 Adrien PINHEIRO.
 
+Petit tp et exercice fait avec @dwaps lors de la semaine du 09 / 05 au 13 / 05 sur Angular
+https://github.com/dwaps/dig-d02/tree/Adrien-Pinheiro
