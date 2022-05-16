@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "46876464",
+      "pseudo": "Julien"
+    },
+    {
+      "pseudo": "Pierre",
+      "id": "yNz_tMo"
+    },
+    {
+      "pseudo": "Adrien",
+      "id": "CWRR4YF"
+    }
+  ],
+  "todos": [
+    {
+      "id": "654654",
+      "id_user": "yNz_tMo",
+      "id_category": "1",
+      "message": "Faire la vaiselle",
+      "done": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "2",
+      "name": "Pense-bête"
+    },
+    {
+      "name": "Ménage",
+      "id": "HtCdPsW"
+    },
+    {
+      "name": "Salon",
+      "id": "nLvolIT"
+    }
+  ]
+}

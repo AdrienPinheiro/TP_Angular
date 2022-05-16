@@ -1,0 +1,9 @@
+<h2>Liste des tâches !</h2>
+
+<div class="users">
+  <select (change)="selectUser(user)">
+    <option *ngFor="let user of users$ | async" [ngValue]="user.id">{{user.pseudo}}</option>
+  </select>
+</div>
+
+<app-todo-list></app-todo-list>

@@ -1,27 +1,36 @@
 # TPAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+TP commencé sur la journée du Lundi 16 / 05 / 2022.
 
-## Development server
+## Comment démarrer le projet
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ouvrir le terminal : 
+ng serve => permet le build de l'application Angular
+npm run api => permet de démarrer une API avec Json-server
 
-## Code scaffolding
+### Les fonctionnalités demandé
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Il faut pouvoir sélectionner un utilisateur, ses tâches seront alors accessible : []
+- Une tâche pourra être créée / catégorisée / modifiée / supprimée : [x] manquant => création + modification
+- Les tâches devront être affichée en deux blocs: les tâches à faire et faites : [x] => le patch ne passe pas mais la fonctionnalité reste bonne
+- Un filtre permettra d'afficher uniquement les tâches d'une même catégories : []
+- Les tâches devront être persistantes : [x]
 
-## Build
+#### Les fonctionnalités supplémentaires
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Adopter une architecture en module : [x]
+- Authentification utilisateur : []
+- Gérer l'adminitration et le rôle utilisateur : []
+- Générer une documentation du projet : [x]
 
-## Running unit tests
+##### Explication
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+J'ai voulu appliqué les bases d'angular sur cette journée en travaillant plusieurs points. 
+L'@Input par exemple en mettant le composant user parent de la todo-list pour créer une tâche en récupérant l'id dans le parent. 
+Je me suis aussi exercé au routing en créant séparement un CRUD (sauf modifier) utilisateur et catégorie. 
+J'ai essayé d'utiliser des services, de centraliser le code et de le rendre le plus propre possible pour garder un objectif de code professionnel.
 
-## Running end-to-end tests
+Le TP a été réalisé en 1 jour, il est loin d'être fini mais je le continuerai pour exercer les bases d'Angular
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Adrien PINHEIRO.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

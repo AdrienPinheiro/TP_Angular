@@ -1,0 +1,29 @@
+header{
+  display: flex;
+  background-color: rgba(53, 146, 40, 0.795);
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  h1{
+    padding-left: 3%;
+    width: 70%;
+  }
+  nav{
+    padding-right: 3%;
+    width: 30%;
+    ul{
+      display: flex;
+      justify-content: space-between;
+      li{
+        list-style: none;
+        border: 1px solid black;
+        padding: 5px 10px;
+        &:hover{
+          cursor: pointer;
+          background-color: rgba(68, 196, 52, 0.795);
+        }
+      }
+    }
+
+  }
+}

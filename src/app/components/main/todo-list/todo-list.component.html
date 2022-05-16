@@ -1,0 +1,40 @@
+<h3>Ajouter une tâche</h3>
+
+<form #FormTodo="ngForm">
+  <input ngModel
+  type="text"
+  name="message"
+  placeholder="Que voulez-vous ajouter ?"
+  required
+  />
+  <button (click)="addTodo(FormTodo)">Ajouter</button>
+</form>
+<select [(ngModel)]="category.id " (change)="observerSelect(category)">
+  <option>Toutes les catégories</option>
+  <option *ngFor="let category of categories$ | async;" [ngValue]="category.id">
+    {{category.name}}
+  </option>
+</select>
+
+
+<div id="Todo">
+  <h4>Liste des tâches à faire :</h4>
+  <div *ngFor="let todo of todos$ |async" class="ListTodo d-flex justify-content-center align-items-center">
+    <div *ngIf="!todo.done">
+      <p [ngClass]="todo.done? 'text-decoration-line-through m-0': ''">{{todo.message}}</p>
+      <input type="checkbox" (click)="check(todo.id, !todo.done)"/>
+      <button (click)="deleteTodo(todo.id)">Supprimer la tâche</button>
+    </div>
+  </div>
+</div>
+
+<div id="Do">
+  <h4>Liste des tâches faites :</h4>
+  <div *ngFor="let todo of todos$ |async" class="ListDo d-flex justify-content-center align-items-center">
+    <div *ngIf="todo.done">
+      <p [ngClass]="todo.done? 'text-decoration-line-through m-0': ''">{{todo.message}}</p>
+      <input type="checkbox" (click)="check(todo.id, !todo.done)" checked/>
+      <button (click)="deleteTodo(todo.id)">Supprimer la tâche</button>
+    </div>
+  </div>
+</div>

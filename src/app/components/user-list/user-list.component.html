@@ -1,0 +1,20 @@
+<h2>Créer un utilisateur !</h2>
+
+<form #formUser="ngForm" id="formUser" (ngSubmit)="onSubmit(formUser)">
+  <input ngModel
+  name="pseudo"
+  type="text"
+  placeholder="Comment s'appelle l'utilisateur ?"
+  required
+  />
+  <button type="submit">Ajouter</button>
+</form>
+
+<h2>Liste des utilisateurs actuels</h2>
+
+<div class="users">
+  <div *ngFor="let user of users$ | async;">
+    <p>{{user.pseudo}} </p>
+    <button (click)="deleteUser(user.id)">Supprimer l'utilisateur</button>
+  </div>
+</div>

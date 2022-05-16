@@ -1,0 +1,20 @@
+<h2>Créer une catégorie !</h2>
+
+<form #formCategory="ngForm" id="formCategory" (ngSubmit)="onSubmit(formCategory)">
+  <input ngModel
+  name="name"
+  type="text"
+  placeholder="Comment s'appelle la catégorie ?"
+  required
+  />
+  <button type="submit">Ajouter</button>
+</form>
+
+<h2>Liste des catégories actuelles</h2>
+
+<div class="categories">
+  <div *ngFor="let category of categories$ | async;">
+    <p>{{category.name}}</p>
+    <button (click)="deleteCategory(category.id)">Supprimer la catégorie</button>
+  </div>
+</div>
