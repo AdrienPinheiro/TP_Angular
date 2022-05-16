@@ -5,8 +5,8 @@ TP commencé sur la journée du Lundi 16 / 05 / 2022.
 ## Comment démarrer le projet
 
 Ouvrir le terminal : 
-ng serve => permet le build de l'application Angular
-npm run api => permet de démarrer une API avec Json-server
+- ng serve => permet le build de l'application Angular
+- npm run api => permet de démarrer une API avec Json-server
 
 ### Les fonctionnalités demandé
 
