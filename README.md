@@ -10,17 +10,17 @@ npm run api => permet de démarrer une API avec Json-server
 
 ### Les fonctionnalités demandé
 
-- Il faut pouvoir sélectionner un utilisateur, ses tâches seront alors accessible : []
+- Il faut pouvoir sélectionner un utilisateur, ses tâches seront alors accessible : [/]
 - Une tâche pourra être créée / catégorisée / modifiée / supprimée : [x] manquant => création + modification
 - Les tâches devront être affichée en deux blocs: les tâches à faire et faites : [x] => le patch ne passe pas mais la fonctionnalité reste bonne
-- Un filtre permettra d'afficher uniquement les tâches d'une même catégories : []
+- Un filtre permettra d'afficher uniquement les tâches d'une même catégories : [/]
 - Les tâches devront être persistantes : [x]
 
 #### Les fonctionnalités supplémentaires
 
 - Adopter une architecture en module : [x]
 - Authentification utilisateur : [/]
-- Gérer l'adminitration et le rôle utilisateur : []
+- Gérer l'adminitration et le rôle utilisateur : [/]
 - Générer une documentation du projet : [x]
 
 ##### Explication
